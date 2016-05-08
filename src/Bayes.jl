@@ -12,6 +12,7 @@ function hpd(x ;a=.05,len=1e3)
   quants[indmin(d)]
 end
 
+
 function plotpost(post;plot_hpd=true,c_main="cornflowerblue",c_hpd="grey",showplot=true,xaxis=0,yaxis=0,name="",title=name)
   # Take a function argument "post" which is an array of 
   # posterior draws and plots the posterior density
@@ -49,9 +50,6 @@ function plotpost(post;plot_hpd=true,c_main="cornflowerblue",c_hpd="grey",showpl
   showplot ? out=plot(p,l) : out=(p,l)
   out
 end
-
-
-
 
 function plotposts(M; spacing=.1, plot_hpd=true,c_main="cornflowerblue",c_hpd="grey",names=fill("Posterior",size(M)[2]))
   n = size(M)[2]
