@@ -1,3 +1,5 @@
+__precompile__()
+
 module Bayes
 using PlotlyJS, KernelDensity
 export plotpost, hpd, plotposts
