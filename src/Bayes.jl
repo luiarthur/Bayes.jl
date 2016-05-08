@@ -1,7 +1,7 @@
-__precompile__()
+#__precompile__()
 
 module Bayes
-using PlotlyJS, KernelDensity, Blink
+using PlotlyJS, KernelDensity
 export plotpost, hpd, plotposts
 
 function hpd(x ;a=.05,len=1e3)
