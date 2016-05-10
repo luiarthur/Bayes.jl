@@ -15,12 +15,12 @@ it is, the greater the accuracy of the HPD intervals.
 
 ## Example usage
 ```julia
-# To install the package,
-# Pkg.clone("http://github.com/luiarthur/Bayes.jl")
-using Bayes
-
-# return the 90% hpd of `randn(100)`
-hpd(randn(100),a=.9)
+julia> # To install the package,
+julia> # Pkg.clone("http://github.com/luiarthur/Bayes.jl")
+julia> using Bayes
+julia> 
+julia> # return the 90% hpd of `randn(100)`
+julia> hpd(randn(100),a=.9)
 ```
 """
 function hpd(x ;a=.05,len=1e3)
